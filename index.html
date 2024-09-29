@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore The World - Travel Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icon.png">
 </head>
 <body>
-    
+    <div class="navbar">
+        <ul class="nav">
+            <li class="nav-item"><a href="#home" class="nav-a">Home</a></li>
+            <li class="nav-item"><a href="#dest" class="nav-a">Destinations</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-a">Blog</a></li>
+            <li class="nav-item"><a href="#gal" class="nav-a">Gallery</a></li>
+            <li class="nav-item"><a href="#faq" class="nav-a">FAQs</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-a">Contact</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <h1 id="home-head">Welcome to Explore The World</h1>
+        <p style="color: #172c66;">"Welcome to my travel blog, where I share my adventures exploring different parts of the world. From bustling cities to tranquil natural wonders, I aim to inspire others to discover the beauty of the world. <b>Let’s travel together!"</b></p>
+        
+    </div>
+    <div id="dest">
+        <h2 id="dest-head">Popular Destinations</h2>
+        <br>
+        <p style="color: #172c66;">Favorite travel destinations
+            <ol style="color: #172c66;">
+                <li>Paris, France</li>
+                <li>Kyoto, Japan</li>
+                <li>Cape Town, South Africa</li>
+                <li>New York City, USA</li>
+                <li>Sydney, Australia</li>
+            </ol>
+        </p>
+        <br>
+        <p style="color: #172c66;">Travel tips
+            <ul id="bullet" style="color: #172c66;">
+                <li>"Pack light and always carry a power bank."</li>
+                <li>"Learn basic phrases in the local language."</li>
+                <li>"Always have local currency for small expenses."</li>
+            </ul>
+        </p>
+        <br>
+        <p style="color: #172c66;">Listen to these tranquil ocean waves!</p>
+        <audio controls>
+            <source src="assets/ocean_waves.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="blog">
+        <h2 id="blog-head">Latest Travel Blog Posts</h2>
+        <p style="color: #172c66;">"Check out my latest blog posts where I dive into unforgettable travel experiences, hidden gems, and cultural insights from around the world."</p>
+        <table style="color: #172c66;" width="100%">
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Exploring the Streets of Paris</td>
+            <td>September 10, 2023</td>
+            <td><a href="https://chatgpt.com/c/66f6c15e-1530-8000-9c27-db078e5e0b6b#">Read More</a></td> 
+            </tr>
+            <tr>
+                <td>A Journey through Kyoto's Temples</td>
+                <td>August 18, 2023</td>
+                <td><a href="https://chatgpt.com/c/66f6c15e-1530-8000-9c27-db078e5e0b6b#">Read More</a></td>
+            </tr>
+            <tr>
+                <td>The Vibrant Culture of Cape Town</td>
+                <td>July 25, 2023</td>
+                <td><a href="https://chatgpt.com/c/66f6c15e-1530-8000-9c27-db078e5e0b6b#">Read More</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="gal">
+        <h2 style="color: #001858;">“Travel Photo Gallery”</h2>
+        <div class="img-con">
+            <div><img src="assets/gal1.jpg" alt="Travel Image" class="gal-img"></div>
+            <div><img src="assets/gal2.jpg" alt="Travel Image" class="gal-img"></div>
+            <div><img src="assets/gal3.jpg" alt="Travel Image" class="gal-img"></div>
+            <div><img src="assets/gal4.jpg" alt="Travel Image" class="gal-img"></div>
+            <div><img src="assets/gal5.jpg" alt="Travel Image" class="gal-img"></div>
+            <div><img src="assets/gal6.jpg" alt="Travel Image" class="gal-img"></div>
+        </div>
+        <video controls width="100%" autoplay>
+            <source src="assets/gal_video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="faq">
+        <h2 id="faq-head">Frequently Asked Questions</h2>
+        <h5 style="color: #172c66;">Q1: What are your top travel tips?</h5>
+        <p style="color: #172c66;">A1: "Always plan ahead, pack light, and make sure you have a good travel insurance policy."</p>
+        <h5 style="color: #172c66;">Q2: How do you choose your destinations?</h5>
+        <p style="color: #172c66;">A2: "I choose destinations based on personal interest, recommendations from friends, and sometimes on a whim!"</p>
+        <h5 style="color: #172c66;">Q3: What do you pack for long trips?</h5>
+        <p style="color: #172c66;">A3: "I always pack versatile clothing, a power bank, travel documents, and a first-aid kit."</p>
+    </div>
+    <div id="contact">
+        <h2 style="color: #001858;">Get In Touch</h2>
+        <p style="color: #172c66;">"Have any questions or want to collaborate? Feel free to contact me!"</p>
+        <p style="color: #172c66;">"Email me at <a href="mailto:youremail@example.com">youremail@example.com</a>"</p> <br><br>
+        <form action="" style="color: #172c66;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="pre">Travel Preference:</label><br>
+            <input type="radio" id="adv" name="travel_pref" value="Adventure"><label for="adv">Adventure</label> <br>
+            <input type="radio" id="cul" name="travel_pref" value="Cultural"><label for="cul">Cultural</label> <br>
+            <input type="radio" id="rel" name="travel_pref" value="Relaxation"><label for="rel">Relaxation</label><br><br>
+            <label for="travel-dest">Favorite Travel Destination</label>
+            <input list="tra-dest" class="style">
+            <datalist id="tra-dest">
+                <option value="Europe">
+                <option value="Asia">
+                <option value="Africa">
+                <option value="North America">
+                <option value="Australia">
+            </datalist>
+            <br><br>
+            <label for="com">Comments</label><br>
+            <textarea name="com" id="com" placeholder="Type you comments here!" cols="50" rows="10"></textarea>
+            <br><br>
+            <input type="submit" value="Submit!" id="sub-button">
+        </form>
+    </div>
 </body>
 </html>
